@@ -18,6 +18,16 @@ h3 {
 
 /* Header */
 header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+nav {
+  justify-content: space-between;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -32,9 +42,48 @@ article {
   padding: 50px 0;
 }
 
-article div {
+.group {
+  display: flex;
+  flex-direction: row;
   text-align: center;
   width: 100%;
+}
+
+.item-double {
+  text-align: left;
+}
+
+.group-double section {
+  width: 50%;
+}
+
+.portfolio div {
+  width: 200%;
+  padding: 10px;
+  justify-content: center;
+}
+
+.group-double {
+  display: flex;
+  flex-direction: row; /* Display portfolio items in a row */
+  justify-content: center; /* Add space between portfolio items */
+  width: 100%;
+  text-align: center;
+}
+
+.item2 {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.item2 div {
+  width: 100%;
+  border: 10px solid #eae2b7;
+}
+
+.item2 p {
+  padding: 5px;
 }
 
 /* Paragraphs */
